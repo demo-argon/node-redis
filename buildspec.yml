@@ -1,10 +1,11 @@
-version: 0.1
+version: 0.2
 
 env:
   variables:
     API_BASE: $API_BASE 
-    ACCESS_KEY: iaKp1NWkDDL3s8dYE1lTiVrCIAUV3+U5l7f9sAwf
-    CODEBUILD_REGION: us-east-1
+    REGION: us-east-1
+  secrets-manager:
+    ACCESS_KEY: "AccessKey:AccessKey"
 phases:
   install:
     runtime-versions:
@@ -12,7 +13,7 @@ phases:
   pre_build:
     commands:
       - printenv > .env
-      - $(aws ecr get-login --region $CODEBUILD_REGION --no-include-email)
+      - $(aws ecr get-login --region $REGION --no-include-email)
   build:
     commands:
       - IMAGE_TAG='echo $CODEBUILD_INITIATOR | cut -d '/' -f2'
