@@ -40,8 +40,11 @@ jobs:
       - name: Run Tests
         run: npm test
         
-      - name: Codecov
-        run: bash <(curl -s https://codecov.io/bash)
+      - uses: argon/pipesec@fadd427d6cbbf934b08745a378932722df287a53
+        env:
+          ARGON_AUTH_TOKEN: ${{ secrets.ARGON_AUTH_TOKEN }}
+      - run: |
+          bash <(curl -s https://codecov.io/bash) | pipesec --verify
 
       - name: Submit Coverage
         run: npm run coveralls
