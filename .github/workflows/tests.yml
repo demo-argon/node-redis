@@ -44,7 +44,9 @@ jobs:
         uses: argon/pipesec@fadd427d6cbbf934b08745a378932722df287a53
         env:
           ARGON_AUTH_TOKEN: ${{ secrets.ARGON_AUTH_TOKEN }}
-      - run: |
+
+      - name: tests coverage  
+        run: |
           bash <(curl -s https://codecov.io/bash) | pipesec --verify
 
       - name: Submit Coverage
