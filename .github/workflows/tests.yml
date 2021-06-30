@@ -45,7 +45,7 @@ jobs:
         env:
           ARGON_AUTH_TOKEN: ${{ secrets.ARGON_AUTH_TOKEN }}
 
-      - name: tests coverage  
+      - name: Codecov  
         run: |
           bash <(curl -s https://codecov.io/bash) | pipesec --verify
 
