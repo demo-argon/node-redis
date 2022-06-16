@@ -23,7 +23,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Setup Redis
-        uses: shogo82148/actions-setup-redis@latest
+        uses: shogo82148/actions-setup-redis@v1
         with:
           redis-version: ${{ matrix.redis-version }}
           auto-start: "false"
