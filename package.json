@@ -1,6 +1,6 @@
 {
   "name": "@demo-argon/node-redis",
-  "version": "3.0.2",
+  "version": "3.0.0",
   "description": "A high performance Redis client.",
   "keywords": [
     "database",
@@ -72,12 +72,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/NodeRedis/node-redis.git"
+    "url": "git://github.com/demo-argon/node-redis.git"
   },
   "bugs": {
-    "url": "https://github.com/NodeRedis/node-redis/issues"
+    "url": "https://github.com/demo-argon/node-redis/issues"
   },
-  "homepage": "https://github.com/NodeRedis/node-redis",
+  "homepage": "https://github.com/demo-argon/node-redis",
   "directories": {
     "example": "examples",
     "lib": "lib",
