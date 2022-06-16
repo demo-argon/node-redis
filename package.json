@@ -1,5 +1,5 @@
 {
-  "name": "redis",
+  "name": "@morwn/node-redis",
   "version": "3.0.2",
   "description": "A high performance Redis client.",
   "keywords": [
@@ -15,14 +15,8 @@
   ],
   "author": "Matt Ranney <mjr@ranney.com>",
   "contributors": [
-    {
-      "name": "Mike Diarmid (Salakar)",
-      "url": "https://github.com/salakar"
-    },
-    {
-      "name": "Ruben Bridgewater (BridgeAR)",
-      "url": "https://github.com/BridgeAR"
-    }
+    "Mike Diarmid (Salakar)",
+    "Ruben Bridgewater (BridgeAR)"
   ],
   "license": "MIT",
   "main": "./index.js",
@@ -86,6 +80,7 @@
   "homepage": "https://github.com/NodeRedis/node-redis",
   "directories": {
     "example": "examples",
+    "lib": "lib",
     "test": "test"
   },
   "funding": {
