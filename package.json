@@ -1,5 +1,5 @@
 {
-  "name": "@morwn/node-redis",
+  "name": "@demo-argon/node-redis",
   "version": "3.0.2",
   "description": "A high performance Redis client.",
   "keywords": [
@@ -88,6 +88,6 @@
     "url": "https://opencollective.com/node-redis"
   },
   "publishConfig": {
-    "@morwn:registry": "https://npm.pkg.github.com"
+    "@demo-argon:registry": "https://npm.pkg.github.com"
   }
 }
